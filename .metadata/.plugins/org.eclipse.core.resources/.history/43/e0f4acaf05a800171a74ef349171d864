@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+/*
+ * nÁø¹ý to decimal 
+ */
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String n = sc.nextLine();
+		int b = sc.nextInt();
+
+		n = new StringBuilder(n).reverse().toString();
+
+		int ans = 0;
+		
+		for (int i = 0; i < n.length(); i++) {
+			if(n.charAt(i) >= 'A')
+				ans += ((int)n.charAt(i)-55) * (int)Math.pow(b, i); 
+		}
+	}
+}
