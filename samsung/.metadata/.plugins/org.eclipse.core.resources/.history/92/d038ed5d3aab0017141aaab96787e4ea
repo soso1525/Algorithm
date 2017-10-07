@@ -1,0 +1,16 @@
+package bitprint;
+
+public class Solution {
+	public static void printBit(char c) {
+		for (int i = 7; i >= 0; i--) {
+			if ((c & (1 << i)) == 1)
+				System.out.print(1);
+			else
+				System.out.print(0);
+		}
+	}
+
+	public static void main(String[] args) {
+		printBit(A);
+	}
+}

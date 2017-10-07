@@ -1,0 +1,17 @@
+package bitprint;
+
+public class Main {
+	public static void main(String[] args) {
+		char c = 10;
+
+	}
+
+	public static void printBit(char i) {
+		for (int j = 7; j >= 0; j--) {
+			if ((i & (1 << j)) == 1)
+				System.out.print(1);
+			else
+				System.out.print(0);
+		}
+	}
+}

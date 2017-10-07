@@ -1,0 +1,12 @@
+package partial_set;
+
+public class Permutation {
+	public static boolean next(int[] arr) {
+
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int n = new Scanner(System.in).nextInt();
+	}
+}

@@ -1,0 +1,10 @@
+package array_flatten;
+
+public class Solution {
+	public static void main(String[] args) {
+		for (int tc = 1; tc <= 10; tc++) {
+
+		}
+
+	}
+}

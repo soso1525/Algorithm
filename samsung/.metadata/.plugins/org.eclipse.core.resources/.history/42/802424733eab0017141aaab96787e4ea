@@ -1,0 +1,11 @@
+package array_maxsum;
+
+public class Solution {
+	public static void main(String[] args) {
+		int tc = 10;
+		int[] arr = new int[100];
+		while(tc-- > 0) {
+			
+		}
+	}
+}

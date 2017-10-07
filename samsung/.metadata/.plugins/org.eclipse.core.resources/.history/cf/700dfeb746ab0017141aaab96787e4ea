@@ -1,0 +1,19 @@
+package array_maxsum;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = 100;
+		int[][] arr = new int[n][n];
+		
+		for(int tc=1; tc<=10; tc++) {
+			
+			
+			System.out.println("#" + tc + " ");
+		}
+	}
+}

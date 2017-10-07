@@ -1,0 +1,10 @@
+package bitprint;
+
+public class Solution {
+	public static printBit(char c) {
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}

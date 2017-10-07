@@ -1,0 +1,9 @@
+package partial_set;
+
+public class Permutation {
+	public static boolean next(int[] arr) {
+
+		return true;
+	}
+
+}

@@ -1,0 +1,52 @@
+package array_maxsum;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = 100;
+		int[][] arr = new int[n][n];
+
+		for (int tc = 1; tc <= 10; tc++) {
+
+			int tmp = 0, tmp2 = 0;
+
+			// arr initialization
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					arr[i][j] = sc.nextInt();
+				}
+			}
+
+			for (int i = 0; i < n; i++) {
+				for (int num : arr[i])
+					tmp += num;
+				al.add(tmp);
+				tmp = 0;
+			}
+
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					tmp += arr[j][i];
+				}
+				al.add(tmp);
+				tmp = 0;
+			}
+
+			for (int i = 0; i < n; i++) {
+				tmp += arr[i][i];
+				tmp2 += arr[i][n - i - 1];
+			}
+			al.add(tmp);
+			al.add(tmp2);
+
+			Collections.sort(al);
+			Collections.reverse(al);
+
+			System.out.println("#" + tc + " " + al.get(0));
+		}
+	}
+}
