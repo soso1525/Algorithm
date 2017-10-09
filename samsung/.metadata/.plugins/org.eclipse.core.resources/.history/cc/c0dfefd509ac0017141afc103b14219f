@@ -1,0 +1,29 @@
+package string_1213;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = "hihellohilovehiapplehibanana";
+		while (sc.hasNextLine()) {
+			String str = sc.nextLine();
+		}
+		String find = "hi";
+
+		int answer = 0;
+		for (int i = 0; i <= str.length() - find.length();) {
+			if (str.charAt(i) == find.charAt(0)) {
+				if (str.substring(i, find.length()).equals(find)) {
+					answer++;
+					i += find.length();
+				}
+			} else {
+				i++;
+			}
+		}
+
+		System.out.println(answer);
+
+	}
+}

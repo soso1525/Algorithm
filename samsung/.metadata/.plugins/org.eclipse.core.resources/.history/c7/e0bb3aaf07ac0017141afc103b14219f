@@ -1,0 +1,11 @@
+package string_1213;
+
+public class Main {
+	public static void main(String[] args) {
+		String str = "hello";
+		String tmp = "hel";
+		System.out.println(str.substring(0, 3));
+		
+		if(tmp.equals(str.substring(0,3))) System.out.println("hi");
+	}
+}

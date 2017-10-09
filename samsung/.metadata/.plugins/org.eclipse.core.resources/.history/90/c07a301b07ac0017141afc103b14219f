@@ -1,0 +1,27 @@
+package string_1213;
+
+import java.util.Scanner;
+
+/* 특정문자열 포함 개수 반환 */
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		for (int tc = 1; tc <= 10; tc++) {
+			int answer = 0;
+
+			String find = sc.nextLine();
+			String str = sc.nextLine();
+
+			for (int i = 0; i <= str.length() - find.length();) {
+				if (str.charAt(i) == find.charAt(0)) {
+					if(str.substring(i, ))
+					i += find.length();
+				} else
+					i++;
+			}
+
+			System.out.println("#" + tc + " " + answer);
+		}
+	}
+}

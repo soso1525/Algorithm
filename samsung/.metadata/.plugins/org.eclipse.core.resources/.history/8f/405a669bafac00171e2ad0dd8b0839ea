@@ -1,0 +1,19 @@
+package string_palin;
+
+public class Main {
+	public static void main(String[] args) {
+		int n = 5;
+		char[] arr = { 'a', 'b', 'c', 'd', 'e' };
+		int len = n;
+
+		for (int j = 0; j <= n - len; j++) {
+			String str = "";
+			for (int k = j; k < j + len; k++) {
+				str += arr[k];
+				len--;
+			}
+
+			System.out.println(str);
+		}
+	}
+}

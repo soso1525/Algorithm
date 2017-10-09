@@ -1,0 +1,7 @@
+package string_palin;
+
+public class Main {
+	public static void main(String[] args) {
+		
+	}
+}

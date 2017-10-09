@@ -1,0 +1,32 @@
+package string_palin;
+
+public class Main {
+	public static void main(String[] args) {
+		int n = 5;
+		char[] arr = { 'a', 'b', 'c', 'd', 'e' };
+		int len = n;
+
+		// while (len > 0) {
+		// for (int i = 0; i <= n - len; i++) {
+		// String str = "";
+		// for (int k = i; k < i + len; k++) {
+		// str += arr[k];
+		// }
+		//
+		// System.out.println(str);
+		// }
+		//
+		// len--;
+		// }
+
+		String str = new String(arr);
+		while (len > 0) {
+			for (int i = 0; i <= n - len; i++) {
+				for (int k = i; k <= i + len; k++) {
+					System.out.println(str.substring(k, len));
+				}
+			}
+			len--;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package string_1213;
+
+public class Main {
+	public static void main(String[] args) {
+		String str = "hihellohilovehiapplehibanana";
+		String find = "hi";
+
+		int answer = 0;
+
+		while(str.length() > find.length()) {
+			
+		}
+		
+		System.out.println(answer);
+
+	}
+}
